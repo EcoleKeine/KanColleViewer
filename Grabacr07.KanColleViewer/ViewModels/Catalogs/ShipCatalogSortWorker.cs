@@ -15,7 +15,7 @@ namespace Grabacr07.KanColleViewer.ViewModels.Catalogs
 	{
 		private static readonly SortableColumn noneColumn = new SortableColumn { Name = "なし", KeySelector = null };
 		private static readonly SortableColumn levelColumn = new SortableColumn { Name = "レベル", KeySelector = x => x.Level, };
-		private static readonly SortableColumn expColumn = new SortableColumn { Name = "次のレベルまでの経験値", KeySelector = x => x.Level, };
+		private static readonly SortableColumn expColumn = new SortableColumn { Name = "次のレベルまでの経験値", KeySelector = x => x.ExpForNextLevel, };
 
 		public static SortableColumn[] Columns { get; set; }
 
